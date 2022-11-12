@@ -14,6 +14,20 @@
     </div>
     <div1> How many rows do you want
         <!--<input type="number" min="2" max="10" value="2">-->
+        <!-- <select name="Rows" id="Choice">
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>-->
+    </div1>
+    <form>
+        Number of rows to be generated
         <select name="Rows" id="Choice">
             <option>2</option>
             <option>3</option>
@@ -24,8 +38,41 @@
             <option>8</option>
             <option>9</option>
             <option>10</option>
-        </select>
-    </div1>
+            <br>
+            <button>Submit</button>
+    </form>
+    <div id="table-gen">
+        <p>Table generated here after clicking submit</p>
+        <table cellpadding="1" cellspacing="1" border="1">
+            <tr>
+                <td>1</td>
+                <td>
+                    <input type="name" placeholder="text goes here...">
+                </td>
+                <td>
+                    <input type="name" placeholder="text goes here...">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <input type="name" placeholder="text goes here...">
+                </td>
+                <td>
+                    <input type="name" placeholder="text goes here...">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <input type="name" placeholder="text goes here...">
+                </td>
+                <td>
+                    <input type="name" placeholder="text goes here...">
+                </td>
+            </tr>
+        </table>
+    </div>
     </select>
 </body>
 
