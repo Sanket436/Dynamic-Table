@@ -3,7 +3,7 @@
 
 <head>
     <meta charset=utf-8 />
-    <title>Calculate Table</title>
+    <title>Calculate Cube</title>
     <style type="text/css">
         body {
             margin: 30px;
@@ -12,26 +12,44 @@
 </head>
 
 <body>
-    <table id="myTable" border="1">
+    <form>
+        <table id="myTable" border="1">
+            <tbody id="myTable1"></tbody>
+            <thead>
+                <tr>
+                    <th>Enter Numbers HERE</th>
+                    <th>Cube of that number</th>
 
-    </table>
+                </tr>
+            </thead>
+            <tr>
+                <td> <input type="text" name="a" id="first" placeholder="Enter a number"> </td>
+
+            </tr>
+            <tr>
+                <td> <button onclick="Cube()">Submit</button> </td>
+            </tr>
+        </table>
+    </form>
     <form>
         <input type="button" onclick="createTable()" value="Create the table">
     </form>
+    <div id="num1"></div>
 </body>
 
 </html>
-<script>
+<script type="text/javascript">
     function createTable() {
         rn = window.prompt("Input number of rows: min rows:2 & max rows :10", 2);
         cn = 2
 
         for (var r = 0; r < parseInt(rn, 10); r++) {
-            var x = document.getElementById('myTable').insertRow(r);
+            var x = document.getElementById("myTable1").insertRow(r);
             for (var c = 0; c < parseInt(cn, 10); c++) {
                 var y = x.insertCell(c);
                 y.innerHTML = "Row-" + r + " Column-" + c;
             }
         }
     }
+
 </script>
